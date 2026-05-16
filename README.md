@@ -1,15 +1,15 @@
 # Beauty Scanner App
 
-Mobile-first skincare scanner app scaffold built with React Native, Expo, and Supabase.
+Mobile-first skincare scanner app scaffold built with Flutter and Supabase.
 
-## Phase 0 decisions
+## Phase 0 Decisions
 
-- **Frontend:** React Native with Expo.
+- **Frontend:** Flutter.
 - **Backend/database:** Supabase with Postgres.
 - **Product direction:** Mobile first.
 - **Initial scope:** Navigation shell only. No product lookup, scanner, parser, or database features are implemented yet.
 
-## Core flow
+## Core Flow
 
 - Home
 - Scan
@@ -20,10 +20,10 @@ Mobile-first skincare scanner app scaffold built with React Native, Expo, and Su
 - Profile
 - Settings
 
-## Project structure
+## Project Structure
 
 ```text
-src/
+lib/
   components/
   models/
   navigation/
@@ -33,9 +33,11 @@ src/
   utils/
 ```
 
-## Run locally
+## Run Locally
+
+Flutter is required.
 
 ```bash
-npm install
-npm run start
+flutter pub get
+flutter run
 ```
