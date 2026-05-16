@@ -51,6 +51,50 @@ If you want to apply the seed manually after reset:
 supabase db query --file supabase/seed/001_starter_catalog.sql
 ```
 
+## Hosted Project
+
+This repo is linked to the hosted Supabase project:
+
+```text
+Project ref: qpozdusbiakyywungjvl
+Project URL: https://qpozdusbiakyywungjvl.supabase.co
+```
+
+The migration and seed were applied with:
+
+```powershell
+npx supabase db push --include-seed
+```
+
+Remote verification query:
+
+```powershell
+npx supabase db query --linked "select (select count(*) from public.brands) as brands, (select count(*) from public.ingredients) as ingredients, (select count(*) from public.products) as products, (select count(*) from public.analysis_rules) as analysis_rules;"
+```
+
+Expected starter counts:
+
+```text
+brands: 5
+ingredients: 10
+products: 5
+analysis_rules: 9
+```
+
+## Flutter Runtime Config
+
+Do not commit real service-role secrets. For the app client, use the project URL and anon or publishable key.
+
+Run Flutter with:
+
+```powershell
+flutter run `
+  --dart-define=SUPABASE_URL=https://qpozdusbiakyywungjvl.supabase.co `
+  --dart-define=SUPABASE_ANON_KEY=your-supabase-anon-or-publishable-key
+```
+
+You can find the client key in the Supabase dashboard under **Project Settings > API**.
+
 ## Apply In Hosted Supabase
 
 1. Create a Supabase project.
