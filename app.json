@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "Beauty Scanner",
+    "slug": "beauty-scanner-app",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#F8F5F1"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F8F5F1"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
