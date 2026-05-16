@@ -9,6 +9,7 @@ coverage/
 
 *.iml
 *.log
+.idea/
 
 .env
 .env.local
