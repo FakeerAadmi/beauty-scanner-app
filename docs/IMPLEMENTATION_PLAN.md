@@ -76,6 +76,8 @@ flutter run
 
 ### Phase 1: Database Foundation
 
+Status: complete.
+
 - Add Supabase migration files.
 - Create tables for brands, products, ingredients, ingredient aliases, product ingredients, analysis rules, user profiles, saved products, and scan history.
 - Add seed data for starter ingredients and products.
